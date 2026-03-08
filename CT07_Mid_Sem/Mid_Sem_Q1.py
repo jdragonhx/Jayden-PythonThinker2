@@ -54,13 +54,13 @@ Requirements:
 import random
 health = 100
 battles = 0
-print("The hero starts his adventure with full health!")
-print("He fights monsters and loses health randomly each round.")
+print("The hero starts his adventure with health: 100")
 while health > 0:
     damage = random.randint(1, 15)
     health -= damage
     battles += 1
-    print(f"After battle {battles}, the hero's health is {health}.")
+    print(f"After fighting monsters, the hero's health is now: {health}")
+print(f"After fighting monsters, his health is now: {health}")
 print(f"He fought {battles} battles, and died.")
 
 # -------------------------------------------------------------------------------------------------------------------
